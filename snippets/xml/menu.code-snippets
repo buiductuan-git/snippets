@@ -1,6 +1,7 @@
 {
     "Menu open & close element": {
         "prefix": [
+            "menu",
             "menu root"
         ],
         "body": [
@@ -12,6 +13,7 @@
     },
     "Menu empty element": {
         "prefix": [
+            "menu",
             "menu item"
         ],
         "body": [
@@ -21,6 +23,7 @@
     },
     "Submenu open & close element": {
         "prefix": [
+            "menu",
             "menu category",
         ],
         "body": [

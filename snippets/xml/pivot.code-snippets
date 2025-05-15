@@ -1,9 +1,6 @@
 {
     "Pivot view": {
-        "prefix": [
-            "pivot",
-            "view"
-        ],
+        "prefix": ["pivot", "view"],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_pivot}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",
@@ -15,10 +12,10 @@
             "           <field name=\"price_subtotal\" type=\"measure\"/>",
             "       </pivot>",
             "   </field>",
-            "</record>",
+            "</record>"
         ],
         "description": "Pivot view",
         "isFileTemplate": false,
-        "scope": "xml",
-    },
+        "scope": "xml"
+    }
 }

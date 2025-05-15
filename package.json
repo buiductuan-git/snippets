@@ -2,7 +2,7 @@
     "name": "tim-snippets",
     "displayName": "Odoo Development Snippet",
     "description": "Odoo Snippet provides a comprehensive set of snippets for Python, XML, and JavaScript, helping Odoo developers speed up development with predefined code templates.",
-    "version": "4.2.1",
+    "version": "4.4.0",
     "author": {
         "name": "Bùi Đức Tuấn",
         "email": "buiductuan12081995@gmail.com",
@@ -114,8 +114,8 @@
         ],
         "iconThemes": [
             {
-                "id": "tim-odoo-icons",
-                "label": "Tim Odoo Icon",
+                "id": "icons",
+                "label": "Odoo Icon",
                 "path": "./icons.json"
             }
         ],
@@ -409,7 +409,7 @@
         {
             "name": "[Tim] Bùi Đức Tuấn",
             "email": "buiductuan12081995@gmail.com",
-            "url": "https://x2t.tech"
+            "url": "https://erp.x2t.tech"
         }
     ],
     "keywords": [

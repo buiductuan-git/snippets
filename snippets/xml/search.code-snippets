@@ -1,8 +1,6 @@
 {
     "Search view": {
-        "prefix": [
-            "search"
-        ],
+        "prefix": ["search"],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_search}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",
@@ -17,25 +15,21 @@
             "           </searchpanel>",
             "       </search>",
             "   </field>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Search] Filter tag": {
-        "prefix": [
-            "filter"
-        ],
+        "prefix": ["filter"],
         "body": [
             "<filter name=\"\" string=\"\" domain=\"[]\" filter_domain=\"[]\" context=\"{}\"/>"
         ],
         "description": "Filter in search view",
         "isFileTemplate": false,
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Search] Search panel tag": {
-        "prefix": [
-            "searchpanel"
-        ],
+        "prefix": ["searchpanel"],
         "body": [
             "<searchpanel>",
             "   <field name=\"\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-\"/>",
@@ -43,6 +37,6 @@
         ],
         "description": "Searchpanel in search view",
         "isFileTemplate": false,
-        "scope": "xml",
-    },
+        "scope": "xml"
+    }
 }

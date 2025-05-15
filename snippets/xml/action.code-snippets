@@ -1,9 +1,6 @@
 {
     "[Action] Window elements": {
-        "prefix": [
-            "action",
-            "window"
-        ],
+        "prefix": ["action", "window"],
         "body": [
             "<record model=\"ir.actions.act_window\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -20,49 +17,39 @@
             "           Content...",
             "       </p>",
             "   </field>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Action] Window view elements": {
-        "prefix": [
-            "action",
-            "view",
-            "window"
-        ],
+        "prefix": ["action", "view", "window"],
         "body": [
             "<record model=\"ir.actions.act_window.view\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"sequence\" eval=\"1\"/>",
             "   <field name=\"view_mode\">${2:tree}</field>",
             "   <field name=\"view_id\" ref=\"${3:VIEW_TREE_SPECIAL}\"/>",
             "   <field name=\"act_window_id\" ref=\"${4:VIEW_TREE_ACTION}\"/>",
-            "</record>",
+            "</record>"
         ],
         "description": "Action window view special",
         "isFileTemplate": false,
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Action] URL elements": {
-        "prefix": [
-            "action",
-            "url"
-        ],
+        "prefix": ["action", "url"],
         "body": [
             "<record model=\"ir.actions.act_url\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"url\">${1:/web}</field>",
             "   <field name=\"name\">${2:ACTION_NAME}</field>",
             "   <field name=\"target\">${3:self}</field>",
-            "</record>",
+            "</record>"
         ],
         "description": "Action URL",
         "scope": "xml",
-        "isFileTemplate": false,
+        "isFileTemplate": false
     },
     "[Action] Server elements": {
-        "prefix": [
-            "action",
-            "server"
-        ],
+        "prefix": ["action", "server"],
         "body": [
             "<record model=\"ir.actions.sever\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -71,15 +58,12 @@
             "   <field name=\"code\">",
             "       model.do_something()",
             "   </field>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Action] report elements": {
-        "prefix": [
-            "action",
-            "report"
-        ],
+        "prefix": ["action", "report"],
         "body": [
             "<record model=\"ir.actions.report\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -94,15 +78,12 @@
             "   <field name=\"attachment\">${8:\"%s.pdf\" % (object.method_name() or object.name)}</field>",
             "   <field name=\"print_report_name\" ref=\"${9:MODULE.PAPER_XML_ID}\"/>",
             "   <field name=\"attachment_use\" eval=\"${10:False}\"/>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Action] Client elements": {
-        "prefix": [
-            "action",
-            "client"
-        ],
+        "prefix": ["action", "client"],
         "body": [
             "<record model=\"ir.actions.client\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -110,16 +91,12 @@
             "   <field name=\"target\">${3:self}</field>",
             "   <field name=\"tag\">${4:TAG_NAME}</field>",
             "   <field name=\"context\">{}</field>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
+        "scope": "xml"
     },
     "[Action] Cron job elements": {
-        "prefix": [
-            "action",
-            "automated",
-            "cron"
-        ],
+        "prefix": ["action", "automated", "cron"],
         "body": [
             "<record model=\"ir.cron\" id=\"${0:CRON_NAME_cron}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -130,10 +107,10 @@
             "   <field name=\"interval_type\">days</field>",
             "   <field name=\"numbercall\">-1</field>",
             "   <field name=\"nextcall\" eval=\"${2:(DateTime.today() + relativedelta(days=1)).strftime(\"%Y-%m-%d 10:00:00\")}\"/>",
-            "</record>",
+            "</record>"
         ],
         "description": "Cron job",
         "isFileTemplate": false,
-        "scope": "xml",
-    },
+        "scope": "xml"
+    }
 }

@@ -1,10 +1,6 @@
 {
     "[Configuration & Settings] App + Setting + Block elements": {
-        "prefix": [
-            "setting",
-            "app",
-            "block"
-        ],
+        "prefix": ["setting", "app", "block"],
         "body": [
             "<app string=\"CRM\" name=\"crm\">",
             "   <setting type=\"header\" string=\"Foo\">",
@@ -24,54 +20,33 @@
             "           <div>This is a different setting</div>",
             "       </setting>",
             "   </block>",
-            "</app>",
-        ],
-        "scope": "xml",
-    },
-    "[Configuration & Settings] App tag": {
-        "prefix": [
-            "app"
-        ],
-        "body": [
-            "<app string=\"\" name=\"\">",
-            "",
             "</app>"
         ],
-        "scope": "xml",
+        "scope": "xml"
+    },
+    "[Configuration & Settings] App tag": {
+        "prefix": ["app"],
+        "body": ["<app string=\"\" name=\"\">", "", "</app>"],
+        "scope": "xml"
     },
     "[Configuration & Settings] Setting tag": {
-        "prefix": [
-            "setting"
-        ],
-        "body": [
-            "<setting type=\"\" string=\"\">",
-            "",
-            "</setting>"
-        ],
-        "scope": "xml",
+        "prefix": ["setting"],
+        "body": ["<setting type=\"\" string=\"\">", "", "</setting>"],
+        "scope": "xml"
     },
     "[Configuration & Settings] Block tag": {
-        "prefix": [
-            "block"
-        ],
-        "body": [
-            "   <block title=\"Title of group Foo\">",
-            "",
-            "   </block>"
-        ],
-        "scope": "xml",
+        "prefix": ["block"],
+        "body": ["   <block title=\"Title of group Foo\">", "", "   </block>"],
+        "scope": "xml"
     },
     "[Configuration & Settings] Record declare": {
-        "prefix": [
-            "config",
-            "parameter"
-        ],
+        "prefix": ["config", "parameter"],
         "body": [
             "<record id=\"${0:CONFIG_PARAMETER_NAME}_config\" model=\"ir.config_parameter\">",
             "   <field name=\"key\">${1:MODULE.KEY_NAME}</field>",
             "   <field name=\"value\" ref=\"\"/>",
-            "</record>",
+            "</record>"
         ],
-        "scope": "xml",
-    },
+        "scope": "xml"
+    }
 }
