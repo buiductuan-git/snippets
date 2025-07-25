@@ -16,8 +16,8 @@
             "           </templates>",
             "       </kanban>",
             "   </field>",
-            "</record>"
+            "</record>",
         ],
-        "scope": "xml"
-    }
+        "scope": "xml",
+    },
 }

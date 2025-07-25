@@ -15,28 +15,28 @@
             "           </searchpanel>",
             "       </search>",
             "   </field>",
-            "</record>"
+            "</record>",
         ],
-        "scope": "xml"
+        "scope": "xml",
     },
     "[Search] Filter tag": {
         "prefix": ["filter"],
         "body": [
-            "<filter name=\"\" string=\"\" domain=\"[]\" filter_domain=\"[]\" context=\"{}\"/>"
+            "<filter name=\"\" string=\"\" domain=\"[]\" filter_domain=\"[]\" context=\"{}\"/>",
         ],
         "description": "Filter in search view",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "[Search] Search panel tag": {
         "prefix": ["searchpanel"],
         "body": [
             "<searchpanel>",
             "   <field name=\"\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-\"/>",
-            "</searchpanel>"
+            "</searchpanel>",
         ],
         "description": "Searchpanel in search view",
         "isFileTemplate": false,
-        "scope": "xml"
-    }
+        "scope": "xml",
+    },
 }

@@ -10,8 +10,8 @@
             "           <field name=\"${12:FIELD_NAME}\" invisible=\"${13:False}\" avatar_field=\"${14:FIELD_X2MANY}\" filters=\"${15:True}\" color=\"${16:True}\" />",
             "       </calendar>",
             "   </field>",
-            "</record>"
+            "</record>",
         ],
-        "scope": "xml"
-    }
+        "scope": "xml",
+    },
 }

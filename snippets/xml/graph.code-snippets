@@ -10,8 +10,8 @@
             "           <field name=\"create_date\" interval=\"month\"/>",
             "       </graph>",
             "   </field>",
-            "</record>"
+            "</record>",
         ],
-        "scope": "xml"
-    }
+        "scope": "xml",
+    },
 }

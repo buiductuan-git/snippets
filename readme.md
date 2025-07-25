@@ -15,22 +15,22 @@ Best regards,
 <b>Bùi Đức Tuấn</b>
 
 <div align="center">
-    <a href="https://www.linkedin.com/in/buiductuan-dev">
+    <a href="https://www.linkedin.com/in/buiductuan/">
         <img src="./assets/images/linkedin.png"
             width="30" height="30" /></a>
     <a href="#">
         <img src="./assets/images/twitter.png"
             width="30" height="30" alt="twitter logo" />
     </a>
-    <a href="https://www.youtube.com/@TimOdooDeveloper">
+    <a href="https://www.youtube.com/@buiductuan.youtube">
         <img src="./assets/images/youtube.png"
             width="30" height="30" alt="youtube logo" />
     </a>
-    <a href="https://www.facebook.com/buiductuan.dev">
+    <a href="https://www.facebook.com/buiductuan.facebook">
         <img src="./assets//images/facebook.png"
             width="30" height="30" alt="facebook logo" />
     </a>
-    <a href="mailto:buiductuan.dev@gmail.com">
+    <a href="mailto:buiductuan12081995@gmail.com">
         <img src="./assets/images/gmail.png"
             width="30" height="30" alt="gmail logo" />
     </a>
@@ -171,14 +171,23 @@ Examples: `form`
 
 ```xml
 <record id='view_MODEL_NAME_form' model='ir.ui.view'>
-<field name='name'></field>
-<field name='model'></field>
+<field name='name' />
+<field name='model' />
 <field name='arch' type='xml'>
-    <form string='' create='' edit='' duplicate='' delete='' js_class='' disable_autofocus='1' banner_route='/module/banner'>
+    <form
+            string=''
+            create=''
+            edit=''
+            duplicate=''
+            delete=''
+            js_class=''
+            disable_autofocus='1'
+            banner_route='/module/banner'
+        >
         <sheet>
             <group>
                 <group>
-                    <field name='' widget='' options='{}'/>
+                    <field name='' widget='' options='{}' />
                 </group>
                 <group>
                 </group>
@@ -187,7 +196,7 @@ Examples: `form`
                     <page>
                         <group>
                             <group>
-                                <field name='' widget='' options='{}'/>
+                                <field name='' widget='' options='{}' />
                             </group>
                             <group>
                             </group>

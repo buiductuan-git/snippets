@@ -15,8 +15,8 @@
             "           </templates>",
             "       </activity>",
             "   </field>",
-            "</record>"
+            "</record>",
         ],
-        "scope": "xml"
-    }
+        "scope": "xml",
+    },
 }

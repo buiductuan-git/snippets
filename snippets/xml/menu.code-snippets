@@ -1,35 +1,26 @@
 {
     "Menu open & close element": {
-        "prefix": [
-            "menu",
-            "menu root"
-        ],
+        "prefix": ["menu", "menu level 1"],
         "body": [
             "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\">",
             "",
-            "</menuitem>"
+            "</menuitem>",
         ],
         "scope": "xml",
     },
     "Menu empty element": {
-        "prefix": [
-            "menu",
-            "menu item"
-        ],
+        "prefix": ["menu", "menu level 3"],
         "body": [
-            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\"/>"
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\"/>",
         ],
         "scope": "xml",
     },
     "Submenu open & close element": {
-        "prefix": [
-            "menu",
-            "menu category",
-        ],
+        "prefix": ["menu", "menu level 2"],
         "body": [
             "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\">",
             "",
-            "</menuitem>"
+            "</menuitem>",
         ],
         "isFileTemplate": false,
         "scope": "xml",

@@ -1,15 +1,15 @@
 {
     "[Field] Char": {
         "prefix": ["char", "field"],
-        "body": ["foo = fields.Char(", "      string=\"\",", ")"]
+        "body": ["foo = fields.Char(", "      string=\"\",", ")"],
     },
     "[Field] Boolean": {
         "prefix": ["boolean", "field"],
-        "body": ["foo = fields.Boolean(", "    string=\"\",", ")"]
+        "body": ["foo = fields.Boolean(", "    string=\"\",", ")"],
     },
     "[Field] Integer": {
         "prefix": ["field", "integer"],
-        "body": ["foo = fields.Integer(", "    string=\"\",", ")"]
+        "body": ["foo = fields.Integer(", "    string=\"\",", ")"],
     },
     "[Field] Float": {
         "prefix": ["float", "field"],
@@ -17,8 +17,8 @@
             "foo = fields.Float(",
             "    string=\"\",",
             "    digits=(10,2), # (tuple(int,int)) – a pair (total, decimal)",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Binary": {
         "prefix": ["field", "binary"],
@@ -26,8 +26,8 @@
             "foo = fields.Binary(",
             "    string=\"\",",
             "    attachment=True, # whether the field should be stored as ir_attachment or in a column of the model’s table (default: True)",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] HTML": {
         "prefix": ["field", "html"],
@@ -40,8 +40,8 @@
             "    sanitize_style=False,",
             "    strip_style=False,",
             "    strip_classes=False,",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Image": {
         "prefix": ["field", "image"],
@@ -51,8 +51,8 @@
             "    max_width=0,",
             "    max_height=0,",
             "    verify_resolution=True,",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Monetary": {
         "prefix": ["field", "monetary"],
@@ -60,8 +60,8 @@
             "foo = fields.Monetary(",
             "    string=\"\",",
             "    res_currency=\"currency_id\",",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Selection": {
         "prefix": ["field", "selection"],
@@ -71,8 +71,8 @@
             "       (\"\", \"A\"),",
             "    ],",
             "    string=\"\",",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Selection add": {
         "prefix": ["field", "selection"],
@@ -82,20 +82,20 @@
             "        (\"c\", \"C\"),",
             "        (\"b\", ),",
             "    ]",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Text": {
         "prefix": ["field", "text"],
-        "body": ["foo = fields.Text(", "    string=\"\",", ")"]
+        "body": ["foo = fields.Text(", "    string=\"\",", ")"],
     },
     "[Field] Date": {
         "prefix": ["date", "field"],
-        "body": ["foo = fields.Date(", "    string=\"\",", ")"]
+        "body": ["foo = fields.Date(", "    string=\"\",", ")"],
     },
     "[Field] Datetime": {
         "prefix": ["datetime", "field"],
-        "body": ["foo = fields.Datetime(", "    string=\"\",", ")"]
+        "body": ["foo = fields.Datetime(", "    string=\"\",", ")"],
     },
     "[Field] Many2one": {
         "prefix": ["field", "many2one", "m2o"],
@@ -104,8 +104,8 @@
             "    string=\"\",",
             "    comodel_name=\"${0:}\",",
             "    ondelete=\"\", # [\"set null\", \"restrict\", \"cascade\"]",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] One2many": {
         "prefix": ["field", "one2many", "o2m"],
@@ -114,8 +114,8 @@
             "    string=\"\",",
             "    comodel_name=\"${0:}\",",
             "    inverse_name=\"\",",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Many2many": {
         "prefix": ["field", "m2m", "many2many"],
@@ -126,8 +126,8 @@
             "    relation=\"\",",
             "    column1=\"\",",
             "    column2=\"\",",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Reference": {
         "prefix": ["field", "reference"],
@@ -135,8 +135,8 @@
             "foo = fields.Reference(",
             "    string=\"\",",
             "    default=\"res_model,res_id\" # Follow partten (\"res_model,res_id\")",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Many2oneReference": {
         "prefix": ["field", "m2o-reference", "many2onereference"],
@@ -144,8 +144,8 @@
             "foo = fields.Many2oneReference(",
             "    string=\"\",",
             "    model_field=\"${0:}\",",
-            ")"
-        ]
+            ")",
+        ],
     },
     "[Field] Related": {
         "prefix": ["related", "field"],
@@ -153,7 +153,7 @@
             "foo = fields.${0:Char}(",
             "    related=\"${1:}\",",
             "    depends=[\"${2:}\"],",
-            ")"
-        ]
-    }
+            ")",
+        ],
+    },
 }
