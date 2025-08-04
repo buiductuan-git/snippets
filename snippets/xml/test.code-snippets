@@ -1,0 +1,17 @@
+{
+    "[Test] web_tour.tour record": {
+        "prefix": ["odoo", "tour", "web_tour"],
+        "body": [
+            "<record id=\"${1:web_title_tour}\" model=\"web_tour.tour\">",
+            "    <field name=\"name\">${1}</field>",
+            "    <field name=\"sequence\">${2:20}</field>",
+            "    <field name=\"rainbow_man_message\">",
+            "        <![CDATA[",
+            "            <b>Congratulations</b>, The browser has been setup new title!<br>.",
+            "        ]]>",
+            "    </field>",
+            "</record>",
+        ],
+        "description": "Insert a web_tour.tour record for UI tour tests",
+    },
+}

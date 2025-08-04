@@ -2,7 +2,7 @@
     "name": "tim-snippets",
     "displayName": "Odoo Development Snippet",
     "description": "Odoo Snippet provides a comprehensive set of snippets for Python, XML, and JavaScript, helping Odoo developers speed up development with predefined code templates.",
-    "version": "4.5.0",
+    "version": "4.6.0",
     "author": {
         "name": "Bùi Đức Tuấn",
         "email": "buiductuan12081995@gmail.com",

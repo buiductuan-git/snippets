@@ -1,6 +1,7 @@
 | Version | Date         | Content                                                                                                         |
 | ------- | ------------ | --------------------------------------------------------------------------------------------------------------- |
-| `4.5.0` | `15/05/2025` | Optimize snippeds for new version Odoo and updated info author                                                  |
+| `4.6.0` | `04/08/2025` | Adding testing syntax (python, javascript, xml)                                                                 |
+| `4.5.0` | `27/07/2025` | Optimize snippeds for new version Odoo and updated info author                                                  |
 | `4.4.0` | `15/05/2025` | Comment area details for models                                                                                 |
 | `4.3.0` | `16/04/2025` | Update manifest with contributors infomation                                                                    |
 | `4.2.1` | `12/01/2025` | remove some redundancy                                                                                          |

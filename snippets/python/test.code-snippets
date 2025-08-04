@@ -1,0 +1,227 @@
+{
+    "[Test] Model HttpCase": {
+        "prefix": ["model", "test", "http", "common", "tagged", "freeze_time", "single"],
+        "body": [
+            "from uuid import uuid4",
+            "from odoo.tests import common # (HttpCase, TransactionCase, SingleTransactionCase, Form, O2MProxy, M2MProxy, tagged, freeze_time, new_test_user)",
+            "@common.freeze_time(\"2025-07-20\")",
+            "@common.tagged(\"-at_install\", \"post_install\", \"your_tag\")",
+            "class FooTest(common.HttpCase):",
+            "# Module structure:",
+            "# your_module/",
+            "#    ├── ...",
+            "#    └── tests/",
+            "#        ├── __init__.py",
+            "#        ├── test_bar.py:",
+            "#        └── test_foo.py",
+            "   @classmethod",
+            "   def setUpClass(cls):",
+            "       super().setUpClass()",
+            "       # Setup user, record,...",
+            "",
+            "   def test_func1(cls):",
+            "       # code...",
+            "",
+            "   def test_tour1(clse):",
+            "       self.start_tour()",
+        ],
+    },
+    "[Test] Model TransactionCase": {
+        "prefix": ["model", "test", "http", "common", "tagged", "freeze_time", "single"],
+        "body": [
+            "from uuid import uuid4",
+            "from odoo.tests import common # (HttpCase, TransactionCase, SingleTransactionCase, Form, O2MProxy, M2MProxy, tagged, freeze_time, new_test_user)",
+            "@common.freeze_time(\"2025-07-20\")",
+            "@common.tagged(\"-at_install\", \"post_install\", \"your_tag\")",
+            "class FooTest(common.TransactionCase):",
+            "# Module structure:",
+            "# your_module/",
+            "#    ├── ...",
+            "#    └── tests/",
+            "#        ├── __init__.py",
+            "#        ├── test_bar.py:",
+            "#        └── test_foo.py",
+            "   @classmethod",
+            "   def setUpClass(cls):",
+            "       super().setUpClass()",
+            "       # Setup user, record,...",
+            "",
+            "   def test_func1(cls):",
+            "       # code...",
+            "",
+        ],
+    },
+    "[Test] Model SingleTransactionCase": {
+        "prefix": ["model", "test", "http", "common", "tagged", "freeze_time", "single"],
+        "body": [
+            "from uuid import uuid4",
+            "from odoo.tests import common # (HttpCase, TransactionCase, SingleTransactionCase, Form, O2MProxy, M2MProxy, tagged, freeze_time, new_test_user)",
+            "@common.freeze_time(\"2025-07-20\")",
+            "@common.tagged(\"-at_install\", \"post_install\", \"your_tag\")",
+            "class FooTest(common.SingleTransactionCase):",
+            "# Module structure:",
+            "# your_module/",
+            "#    ├── ...",
+            "#    └── tests/",
+            "#        ├── __init__.py",
+            "#        ├── test_bar.py:",
+            "#        └── test_foo.py",
+            "   @classmethod",
+            "   def setUpClass(cls):",
+            "       super().setUpClass()",
+            "       # Setup user, record,...",
+            "",
+            "   def test_func1(cls):",
+            "       # code...",
+            "",
+        ],
+    },
+    "[Test] assertAlmostEqual": {
+        "prefix": ["assert", "almostEqual"],
+        "body": ["self.assertAlmostEqual(${1:expected}, ${2:actual})"],
+    },
+    "[Test] assertCountEqual": {
+        "prefix": ["assert", "countEqual"],
+        "body": ["self.assertCountEqual(${1:list1}, ${2:list2})"],
+    },
+    "[Test] assertDictEqual": {
+        "prefix": ["assert", "dictEqual"],
+        "body": ["self.assertDictEqual(${1:expected}, ${2:actual})"],
+    },
+    "[Test] assertEqual": {
+        "prefix": ["assert", "equal"],
+        "body": ["self.assertEqual(${1:expected}, ${2:actual})"],
+    },
+    "[Test] assertFalse": {
+        "prefix": ["assert", "false"],
+        "body": ["self.assertFalse(${1:expr})"],
+    },
+    "[Test] assertGreater": {
+        "prefix": ["assert", "greater"],
+        "body": ["self.assertGreater(${1:a}, ${2:b})"],
+    },
+    "[Test] assertGreaterEqual": {
+        "prefix": ["assert", "greaterEqual"],
+        "body": ["self.assertGreaterEqual(${1:a}, ${2:b})"],
+    },
+    "[Test] assertHTMLEqual": {
+        "prefix": ["assert", "htmlEqual"],
+        "body": ["self.assertHTMLEqual(${1:html1}, ${2:html2})"],
+    },
+    "[Test] assertIn": {
+        "prefix": ["assert", "in"],
+        "body": ["self.assertIn(${1:member}, ${2:container})"],
+    },
+    "[Test] assertIs": {
+        "prefix": ["assert", "is"],
+        "body": ["self.assertIs(${1:a}, ${2:b})"],
+    },
+    "[Test] assertIsInstance": {
+        "prefix": ["assert", "isInstance"],
+        "body": ["self.assertIsInstance(${1:obj}, ${2:type})"],
+    },
+    "[Test] assertIsNone": {
+        "prefix": ["assert", "isNone"],
+        "body": ["self.assertIsNone(${1:expr})"],
+    },
+    "[Test] assertIsNot": {
+        "prefix": ["assert", "isNot"],
+        "body": ["self.assertIsNot(${1:a}, ${2:b})"],
+    },
+    "[Test] assertIsNotNone": {
+        "prefix": ["assert", "isNotNone"],
+        "body": ["self.assertIsNotNone(${1:expr})"],
+    },
+    "[Test] assertItemsEqual": {
+        "prefix": ["assert", "itemsEqual"],
+        "body": ["self.assertItemsEqual(${1:list1}, ${2:list2})"],
+    },
+    "[Test] assertLess": {
+        "prefix": ["assert", "less"],
+        "body": ["self.assertLess(${1:a}, ${2:b})"],
+    },
+    "[Test] assertLessEqual": {
+        "prefix": ["assert", "lessEqual"],
+        "body": ["self.assertLessEqual(${1:a}, ${2:b})"],
+    },
+    "[Test] assertListEqual": {
+        "prefix": ["assert", "listEqual"],
+        "body": ["self.assertListEqual(${1:list1}, ${2:list2})"],
+    },
+    "[Test] assertLogs": {
+        "prefix": ["assert", "logs"],
+        "body": ["with self.assertLogs(${1:logger}, level='${2:INFO}') as cm:\n\t${3:pass}"],
+    },
+    "[Test] assertMultiLineEqual": {
+        "prefix": ["assert", "multiLineEqual"],
+        "body": ["self.assertMultiLineEqual(${1:str1}, ${2:str2})"],
+    },
+    "[Test] assertNoLogs": {
+        "prefix": ["assert", "noLogs"],
+        "body": ["with self.assertNoLogs(${1:logger}):\n\t${2:pass}"],
+    },
+    "[Test] assertNotAlmostEqual": {
+        "prefix": ["assert", "notAlmostEqual"],
+        "body": ["self.assertNotAlmostEqual(${1:expected}, ${2:actual})"],
+    },
+    "[Test] assertNotEqual": {
+        "prefix": ["assert", "notEqual"],
+        "body": ["self.assertNotEqual(${1:a}, ${2:b})"],
+    },
+    "[Test] assertNotIn": {
+        "prefix": ["assert", "notIn"],
+        "body": ["self.assertNotIn(${1:member}, ${2:container})"],
+    },
+    "[Test] assertNotIsInstance": {
+        "prefix": ["assert", "notIsInstance"],
+        "body": ["self.assertNotIsInstance(${1:obj}, ${2:type})"],
+    },
+    "[Test] assertNotRegex": {
+        "prefix": ["assert", "notRegex"],
+        "body": ["self.assertNotRegex(${1:text}, ${2:regex})"],
+    },
+    "[Test] assertQueries": {
+        "prefix": ["assert", "queries"],
+        "body": ["with self.assertQueries(${1:num_queries}):\n\t${2:pass}"],
+    },
+    "[Test] assertQueriesContain": {
+        "prefix": ["assert", "queriesContain"],
+        "body": ["self.assertQueriesContain(${1:query}, ${2:queries})"],
+    },
+    "[Test] assertRaises": {
+        "prefix": ["assert", "raises"],
+        "body": ["with self.assertRaises(${1:Exception}):\n\t${2:pass}"],
+    },
+    "[Test] assertRaisesRegex": {
+        "prefix": ["assert", "raisesRegex"],
+        "body": ["with self.assertRaisesRegex(${1:Exception}, r\"${2:regex}\"):\n\t${3:pass}"],
+    },
+    "[Test] assertRecordValues": {
+        "prefix": ["assert", "recordValues"],
+        "body": ["self.assertRecordValues(${1:records}, [${2:{'field': 'value'}}])"],
+    },
+    "[Test] assertRegex": {
+        "prefix": ["assert", "regex"],
+        "body": ["self.assertRegex(${1:text}, r\"${2:regex}\")"],
+    },
+    "[Test] assertTrue": {
+        "prefix": ["assert", "true"],
+        "body": ["self.assertTrue(${1:expr})"],
+    },
+    "[Test] assertTupleEqual": {
+        "prefix": ["assert", "tupleEqual"],
+        "body": ["self.assertTupleEqual(${1:tuple1}, ${2:tuple2})"],
+    },
+    "[Test] assertXMLEqual": {
+        "prefix": ["assert", "xmlEqual"],
+        "body": ["self.assertXMLEqual(${1:xml1}, ${2:xml2})"],
+    },
+    "[Test] assertURLEqual": {
+        "prefix": ["assert", "urlEqual"],
+        "body": ["self.assertURLEqual(${1:url1}, ${2:url2})"],
+    },
+    "[Test] assertWarnsRegex": {
+        "prefix": ["assert", "warnsRegex"],
+        "body": ["with self.assertWarnsRegex(${1:Warning}, r\"${2:regex}\"):\n\t${3:pass}"],
+    },
+}
